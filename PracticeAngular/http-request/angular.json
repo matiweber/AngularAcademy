@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Practice-Pipes": {
+    "http-request": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Practice-Pipes",
+            "outputPath": "dist/http-request",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Practice-Pipes:build:production"
+              "browserTarget": "http-request:build:production"
             },
             "development": {
-              "browserTarget": "Practice-Pipes:build:development"
+              "browserTarget": "http-request:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Practice-Pipes:build"
+            "browserTarget": "http-request:build"
           }
         },
         "test": {
@@ -99,5 +99,5 @@
       }
     }
   },
-  "defaultProject": "Practice-Pipes"
+  "defaultProject": "http-request"
 }
